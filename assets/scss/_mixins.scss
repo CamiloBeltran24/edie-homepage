@@ -1,0 +1,15 @@
+@mixin flex-layout($jc: center, $ai: center, $gap: 0) {
+  display: flex;
+
+  @if ($jc) {
+    justify-content: $jc;
+  }
+
+  @if ($ai) {
+    align-items: $ai;
+  }
+
+  @if ($gap) {
+    gap: $gap;
+  }
+}
