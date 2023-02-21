@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "sass": "^1.58.3"
+  },
+  "name": "edie-homepage",
+  "description": "<!-- Please update value in the {}  -->",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch assets/scss/styles.scss assets/css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CamiloBeltran24/edie-homepage.git"
+  },
+  "keywords": [],
+  "author": "Christian Camilo Beltran Fonseca",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CamiloBeltran24/edie-homepage/issues"
+  },
+  "homepage": "https://github.com/CamiloBeltran24/edie-homepage#readme"
+}

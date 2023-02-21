@@ -11,18 +11,82 @@
       href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&family=Poppins:wght@200;300;400;500&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <div class="flex-layout"></div>
+        <div class="flex-layout flex-layout-header">
+          <div class="header-name">
+            <h1>Edie</h1>
+
+            <div class="burger-menu js-burger-menu">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+
+          <nav class="header-nav">
+            <ul class="flex-layout">
+              <li>Home</li>
+              <li>Services</li>
+              <li>Our works</li>
+              <li>clients</li>
+              <li>contact</li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
     <section class="start-content">
-      <div class="top-content">
-        <div class="wrapper"></div>
-      </div>
+      <section class="top-content">
+        <div class="container">
+          <span class="small-title">Unhappy with your website?</span>
+
+          <h1 class="title">
+            We create beautiful <br />
+            and fast web services
+          </h1>
+
+          <div class="slider">
+            <div class="slide">
+              <figure>
+                <img
+                  src="./assets/images/heroImage.jpg"
+                  alt="image of 3 people in a meeting inside a small conference room"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-content">
+        <div class="container">
+          <h2 class="title">
+            Story, emotion <br />
+            and purpose
+          </h2>
+          <p>
+            We help transform your ideas into real world applications that will
+            outperform your toughest competition and help you achieve your
+            strategic goals in short period of time.
+          </p>
+
+          <form action="" method="post" class="contactForm" id="contactForm">
+            <label for="email">Want us to contact you?</label>
+            <div class="box">
+              <input type="email" name="email" id="email" />
+              <button type="submit">Join</button>
+            </div>
+          </form>
+        </div>
+      </section>
     </section>
+
+    <script src="./assets/js/index.js"></script>
   </body>
 </html>

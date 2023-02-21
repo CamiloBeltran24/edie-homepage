@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+p {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.header {
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+}
+.header-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+.header-name h1 {
+  font-family: "Heebo", sans-serif;
+}
+.header-name .burger-menu {
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  flex-direction: column;
+}
+.header-name .burger-menu .line {
+  width: 100%;
+  height: 3px;
+  border-radius: 10px;
+  background-color: #000;
+}
+.header-nav {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 110%;
+  z-index: 2;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.header-nav ul {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-direction: column;
+}
+.header-nav ul li {
+  list-style: none;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+.header-nav ul li a {
+  font-size: 24px;
+}
+.header-nav.active {
+  left: 0;
+}
+.header.active {
+  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.15));
+}
+
+.top-content {
+  padding-top: 120px;
+}
+.top-content span,
+.top-content h1 {
+  padding-left: 40px;
+  padding-right: 50px;
+}
+.top-content .small-title {
+  color: #2d9cdb;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+}
+.top-content .slider {
+  width: 100%;
+  height: 145px;
+  margin: 15px 0 20px 0;
+}
+.top-content .slider .slide {
+  height: 100%;
+  padding: 0 12px;
+}
+.top-content .slider .slide figure {
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.intro-content {
+  padding: 0 60px 50px 40px;
+}
+.intro-content h2 {
+  margin-bottom: 30px;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,4 +1,4 @@
-@mixin flex-layout($jc: center, $ai: center, $gap: 0) {
+@mixin flex-layout($jc: center, $ai: center, $gap: 50px, $fd: false) {
   display: flex;
 
   @if ($jc) {
@@ -11,5 +11,9 @@
 
   @if ($gap) {
     gap: $gap;
+  }
+
+  @if ($fd) {
+    flex-direction: $fd;
   }
 }
