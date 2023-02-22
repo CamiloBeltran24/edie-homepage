@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: $primary-font;
+  outline: none;
 }
 
 .container {
@@ -24,6 +25,12 @@ img {
 .title {
   font-weight: 500;
   font-size: 24px;
+  line-height: 36px;
+}
+
+.item-title {
+  font-size: 24px;
+  font-weight: 700;
   line-height: 36px;
 }
 

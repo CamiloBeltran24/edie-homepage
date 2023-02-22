@@ -1,0 +1,33 @@
+.services {
+  .container {
+    padding: 0 52px 0 50px;
+  }
+  .title {
+    padding-right: 22%;
+  }
+
+  .grid {
+    padding: 70px 0;
+
+    .item-title {
+      margin: 30px 0;
+    }
+
+    .icon {
+      width: 67px;
+      height: 67px;
+      border-radius: 16px;
+      @include flex-layout($jc: center, $ai: center, $gap: 0);
+      &-design {
+        background-color: $blue;
+      }
+
+      &-front {
+        background-color: $green;
+      }
+      img {
+        width: 27px;
+      }
+    }
+  }
+}

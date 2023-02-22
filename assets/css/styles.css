@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  outline: none;
 }
 
 .container {
@@ -27,6 +28,12 @@ img {
 .title {
   font-weight: 500;
   font-size: 24px;
+  line-height: 36px;
+}
+
+.item-title {
+  font-size: 24px;
+  font-weight: 700;
   line-height: 36px;
 }
 
@@ -136,6 +143,76 @@ p {
 }
 .intro-content h2 {
   margin-bottom: 30px;
+}
+.intro-content form {
+  margin: 30px 0;
+}
+.intro-content form label {
+  font-size: 10px;
+  color: #828282;
+  line-height: 15px;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 5px;
+}
+.intro-content form .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  background-color: #f2f2f2;
+  padding: 4px;
+  border-radius: 12px;
+}
+.intro-content form .box input {
+  border: none;
+  background-color: transparent;
+  padding: 15px;
+  width: 60%;
+}
+.intro-content form .box input::placeholder {
+  color: #bdbdbd;
+}
+.intro-content form .box button {
+  background-color: #2d9cdb;
+  padding: 13px 21px;
+  border-radius: 12px;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+}
+
+.services .container {
+  padding: 0 52px 0 50px;
+}
+.services .title {
+  padding-right: 22%;
+}
+.services .grid {
+  padding: 70px 0;
+}
+.services .grid .item-title {
+  margin: 30px 0;
+}
+.services .grid .icon {
+  width: 67px;
+  height: 67px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.services .grid .icon-design {
+  background-color: #2d9cdb;
+}
+.services .grid .icon-front {
+  background-color: #27ae60;
+}
+.services .grid .icon img {
+  width: 27px;
 }
 
 /*# sourceMappingURL=styles.css.map */
