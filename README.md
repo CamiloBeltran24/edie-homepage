@@ -1,1 +1,2 @@
-# edie-homepage
+# Edie Homepage
+## dev challenge
