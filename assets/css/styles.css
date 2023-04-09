@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.small-title {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.titles {
+  color: #333333;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+p {
+  font-size: 12px;
+  line-height: 18px;
+  color: #4F4F4F;
+  font-weight: 400;
+}
+
+.header {
+  position: relative;
+  padding: 20px 10px;
+  z-index: 3;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+.header-logo {
+  font-family: "Heebo", sans-serif;
+  font-size: 24px;
+  line-height: 35px;
+  font-weight: 800;
+}
+.header .navigation {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: -110vw;
+  opacity: 0;
+  z-index: 2;
+}
+.header .js-burger-menu .lines {
+  width: 18px;
+  height: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .js-burger-menu .lines .line {
+  width: 18px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #000000;
+}
+
+.intro h1, .intro h2 {
+  padding-left: 25px;
+}
+.intro .small-title {
+  color: #2D9CDB;
+}
+.intro .titles {
+  font-size: 24px;
+  line-height: 36px;
+}
+.intro-slider {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 18px;
+  overflow: hidden;
+  margin-bottom: 22px;
+}
+.intro-slider .slide {
+  width: 100%;
+  height: 145px;
+}
+.intro-slider figure {
+  width: 100%;
+  height: 100%;
+}
+.intro-slider figure img {
+  object-position: left;
+}
+.intro p {
+  padding-left: 25px;
+  padding-right: 40px;
+}
+.intro .copy-form {
+  margin: 30px 0;
+  padding-left: 25px;
+  padding-right: 40px;
+}
+.intro .copy-form .small-title {
+  color: #828282;
+  font-size: 10px;
+  line-height: 15px;
+  font-weight: 500;
+  padding-left: 0;
+  margin-bottom: 8px;
+}
+.intro .copy-form .field {
+  position: relative;
+}
+.intro .copy-form input {
+  padding: 15px 20px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  background-color: #F2F2F2;
+  width: 100%;
+  color: #BDBDBD;
+  font-size: 14px;
+}
+.intro .copy-form input::placeholder {
+  color: #BDBDBD;
+}
+.intro .copy-form button {
+  padding: 10px 20px;
+  color: #FFFFFF;
+  transition: all 1000ms;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #2D9CDB;
+  cursor: pointer;
+  background-color: #2D9CDB;
+  border-radius: 12px;
+  position: absolute;
+  top: 50%;
+  right: 4px;
+  transform: translateY(-50%);
+}
+.intro .copy-form button:hover {
+  color: #ffffff;
+  transform: scale(1.1) translateY(-50%);
+  outline: 2px solid #2D9CDB;
+  box-shadow: 4px 5px 17px -4px #2D9CDB;
+}
+.intro .copy-form button::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #2D9CDB;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+.intro .copy-form button:hover::before {
+  width: 250%;
+}
+
+/*# sourceMappingURL=styles.css.map */
