@@ -1,0 +1,49 @@
+.projects {
+  padding-bottom: 72px;
+  &-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+  }
+  .project {
+    flex: 1 0 351px;
+    max-width: 100%;
+    figure{
+      // max-height: 351px;
+      border-radius: 16px;
+      overflow: hidden;
+      img {
+        border-radius: 16px;
+      }
+    }
+
+    .small-title {
+      padding-left: 0;
+      color: $btn-gray-text;
+      font-size: 12px;
+      line-height: 18px;
+      font-weight: 300;
+      margin-top: 5px;
+    }
+
+    &-name{
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 27px;
+    }
+  }
+
+  .btn{
+    &.btn-arrow {
+      color: $blue;
+      background-color: transparent;
+      padding-right: 30px;
+      font-size: 18px;
+      background-image: url('../svg/right-arrow.svg');
+      background-position: center right;
+      background-size: 20px;
+      background-repeat: no-repeat;
+    }
+  }
+}

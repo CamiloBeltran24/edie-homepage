@@ -51,6 +51,10 @@ p {
   font-weight: 500;
 }
 
+.start-content {
+  max-width: 100vw;
+}
+
 .header {
   position: relative;
   padding: 20px 10px;
@@ -234,6 +238,269 @@ p {
 .services-box .service:nth-child(even) .btn {
   background-color: #2D9CDB;
   color: #FFFFFF;
+}
+
+.projects {
+  padding-bottom: 72px;
+}
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+}
+.projects .project {
+  flex: 1 0 351px;
+  max-width: 100%;
+}
+.projects .project figure {
+  border-radius: 16px;
+  overflow: hidden;
+}
+.projects .project figure img {
+  border-radius: 16px;
+}
+.projects .project .small-title {
+  padding-left: 0;
+  color: #828282;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 300;
+  margin-top: 5px;
+}
+.projects .project-name {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}
+.projects .btn.btn-arrow {
+  color: #2D9CDB;
+  background-color: transparent;
+  padding-right: 30px;
+  font-size: 18px;
+  background-image: url("../svg/right-arrow.svg");
+  background-position: center right;
+  background-size: 20px;
+  background-repeat: no-repeat;
+}
+
+.team-players .small-title, .team-players .titles {
+  padding-left: 0;
+}
+.team-players .small-title {
+  color: #EB5757;
+  font-size: 18px;
+}
+.team-players .titles {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 54px;
+}
+.team-players__description p {
+  padding-right: 25%;
+  font-size: 16px;
+  line-height: 24px;
+}
+.team-players__images {
+  margin: 35px 0 0;
+}
+.team-players__images .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: fit-content;
+  margin: 0 auto;
+}
+.team-players__images .box .left, .team-players__images .box .right {
+  width: 50%;
+}
+.team-players__images .box .left figure img, .team-players__images .box .right figure img {
+  border-radius: 24px;
+  overflow: hidden;
+}
+.team-players__images .box .left figure {
+  max-width: 178px;
+  max-height: 178px;
+}
+.team-players__images .box .right figure:nth-child(1) {
+  max-width: 145px;
+  max-height: 145px;
+  margin-bottom: 10px;
+}
+.team-players__images .box .right figure:nth-child(2) {
+  max-width: 163px;
+  max-height: 167px;
+}
+
+.reviews {
+  padding: 100px 0;
+}
+.reviews blockquote p {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 500;
+  color: #333333;
+}
+.reviews-info {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 35px 0;
+  max-width: 355px;
+}
+.reviews-info figure {
+  width: 82px;
+  height: 82px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.reviews-info p {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 10px;
+}
+.reviews-info span {
+  font-size: 18px;
+  line-height: 27px;
+  color: #828282;
+}
+
+.footer {
+  background-color: #100E1D;
+  color: #FFFFFF;
+  padding: 35px 0 10px;
+}
+.footer .container {
+  padding: 0 40px;
+}
+.footer a {
+  color: #FFFFFF;
+}
+.footer ul {
+  list-style: none;
+}
+.footer ul li a {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 200%;
+}
+.footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-bottom: 154px;
+}
+.footer .row .social-networks {
+  margin: 65px 0;
+}
+.footer .row .social-networks span {
+  color: #FFFFFF;
+  font-family: "Heebo", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 53px;
+}
+.footer .row .social-networks ul {
+  display: flex;
+  gap: 11px;
+}
+.footer .row .social-networks ul li {
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+.footer .row .social-networks ul li a {
+  position: absolute;
+  display: inline-block;
+  font-size: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.footer .row .social-networks ul li.instagram {
+  background-image: url("../svg/instagram.svg");
+}
+.footer .row .social-networks ul li.linkedin {
+  background-image: url("../svg/linkedin.svg");
+}
+.footer .row .social-networks ul li.twitter {
+  background-image: url("../svg/twitter.svg");
+}
+.footer .row .footer-form .small-title {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 15px;
+  padding-left: 0;
+  color: #828282;
+  margin-bottom: 10px;
+}
+.footer .row form {
+  position: relative;
+}
+.footer .row form input {
+  padding: 15px 20px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  background-color: #F2F2F2;
+  width: 100%;
+  color: #BDBDBD;
+  font-size: 14px;
+}
+.footer .row form input::placeholder {
+  color: #BDBDBD;
+}
+.footer .row form button {
+  padding: 10px 20px;
+  color: #FFFFFF;
+  transition: all 1000ms;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #2D9CDB;
+  cursor: pointer;
+  background-color: #2D9CDB;
+  border-radius: 12px;
+  position: absolute;
+  top: 50%;
+  right: 4px;
+  transform: translateY(-50%);
+}
+.footer .row form button:hover {
+  color: #ffffff;
+  transform: scale(1.1) translateY(-50%);
+  outline: 2px solid #2D9CDB;
+  box-shadow: 4px 5px 17px -4px #2D9CDB;
+}
+.footer .row form button::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #2D9CDB;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+.footer .row form button:hover::before {
+  width: 250%;
+}
+.footer .credits {
+  text-align: center;
+}
+.footer .credits p {
+  color: #FFFFFF;
+  font-weight: 400;
+}
+.footer .credits p a {
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=styles.css.map */

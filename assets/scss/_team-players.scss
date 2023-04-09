@@ -1,0 +1,72 @@
+.team-players {
+  .small-title, .titles{
+    padding-left: 0;
+  }
+
+  .small-title {
+    color: $orange;
+    font-size: 18px;
+  }
+
+  .titles {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+  }
+
+  &__description {
+    p {
+      padding-right: 25%;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__images{
+    margin: 35px 0 0;
+    .box{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: fit-content;
+      margin: 0 auto;
+
+
+      .left, .right {
+        width: 50%;
+
+        figure {
+          img {
+            border-radius: 24px;
+            overflow: hidden;
+          }
+        }
+      }
+
+
+      .left {
+        figure {
+          max-width: 178px;
+          max-height: 178px;
+        }
+      }
+
+      .right {
+        figure {
+          &:nth-child(1) {
+            max-width: 145px;
+            max-height: 145px;
+            margin-bottom: 10px;
+  
+          }
+          &:nth-child(2) {
+            max-width: 163px;
+            max-height: 167px;
+  
+          }
+        }
+      }
+    }
+  }
+}
