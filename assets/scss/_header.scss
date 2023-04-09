@@ -1,7 +1,11 @@
 .header {
-  position: relative;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
   padding: 20px 10px;
   z-index: 3;
+  background-color: $white;
   .container {
     display: flex;
     align-items: center;
@@ -20,13 +24,39 @@
     position: fixed;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     top: 0;
     left: -110vw;
     opacity: 0;
     z-index: 2;
+    background-color: $white;
+    transition: all 0.3s ease-in-out;
+
+    &.active {
+      left: 0;
+      opacity: 1;
+    }
+
+    nav {
+      width: fit-content;
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        li {
+          text-align: center;
+        }
+      }
+    }
   }
 
   .js-burger-menu {
+    position: relative;
+    z-index: 4;
+
     .lines {
       width: 18px;
       height: 12px;
