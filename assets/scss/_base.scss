@@ -9,6 +9,7 @@
 .container {
   max-width: 1200px;
   padding: 0 10px;
+  margin: 0 auto;
 }
 
 .small-title {
@@ -80,4 +81,15 @@ a.btn-subline{
 .start-content{
   max-width: 100vw;
   padding-top: 130px;
+}
+
+@media screen and (min-width: 769px) {
+  .container{
+    max-width: 1400px;
+  }
+
+  p{
+    font-size: 18px;
+    line-height: 27px;
+  }
 }

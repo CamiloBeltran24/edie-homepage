@@ -114,3 +114,47 @@
     }
   }
 }
+
+@media screen and (min-width: 769px) {
+  .intro {
+    .small-title {
+      font-size: 18px;
+      line-height: 27px;
+      padding-left: 120px;
+    }
+
+    .titles {
+      font-size: 48px;
+      line-height: 72px;
+      padding-left: 120px;
+    }
+
+    &-slider {
+      // max-width: 1332px;
+      height: 354px;
+
+      .slide {
+        height: 100%;
+      }
+    }
+
+    .copy {
+      padding-left: 120px;
+      padding-right: 41%;
+
+      .titles {
+        padding-left: 0;
+      }
+
+      p {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      &-form {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+}

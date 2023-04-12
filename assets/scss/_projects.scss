@@ -1,5 +1,6 @@
 .projects {
   padding-bottom: 72px;
+
   &-grid {
     display: flex;
     flex-wrap: wrap;
@@ -44,6 +45,37 @@
       background-position: center right;
       background-size: 20px;
       background-repeat: no-repeat;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .projects {
+
+    .titles {
+      font-size: 36px;
+      line-height: 54px;
+    }
+
+    &-grid {
+      row-gap: 0;
+      padding-top: 40px;
+      max-width: 1120px;
+      margin: 0 auto;
+
+      .project {
+        width: 545px;
+
+        &:nth-child(2n + 1) {
+          position: relative;
+          margin-top: 110px;
+        }
+
+        &:nth-child(2n) {
+          position: relative;
+          margin-top: -20px;
+        }
+      }
     }
   }
 }

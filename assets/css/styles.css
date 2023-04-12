@@ -9,6 +9,7 @@
 .container {
   max-width: 1200px;
   padding: 0 10px;
+  margin: 0 auto;
 }
 
 .small-title {
@@ -78,6 +79,15 @@ a.btn-subline:hover::before {
   padding-top: 130px;
 }
 
+@media screen and (min-width: 769px) {
+  .container {
+    max-width: 1400px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
 .header {
   position: fixed;
   width: 100vw;
@@ -128,6 +138,11 @@ a.btn-subline:hover::before {
 }
 .header .navigation nav ul li {
   text-align: center;
+  color: #4F4F4F;
+}
+.header .navigation nav ul li a {
+  color: #4F4F4F;
+  text-decoration: none;
 }
 .header .js-burger-menu {
   position: relative;
@@ -147,7 +162,42 @@ a.btn-subline:hover::before {
   border-radius: 2px;
   background-color: #000000;
 }
+.header.scroll {
+  box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+}
 
+@media screen and (min-width: 769px) {
+  .header {
+    padding: 42px 52px;
+  }
+  .header-logo {
+    font-size: 36px;
+  }
+  .header .js-burger-menu {
+    display: none;
+  }
+  .header .navigation {
+    position: relative;
+    width: 85%;
+    height: auto;
+    opacity: 1;
+    left: unset;
+  }
+  .header .navigation nav {
+    width: 100%;
+  }
+  .header .navigation nav ul {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .header .navigation nav ul li {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .header .navigation nav ul li a {
+    font-size: 24px;
+  }
+}
 .intro {
   padding-bottom: 72px;
 }
@@ -251,6 +301,39 @@ a.btn-subline:hover::before {
   width: 250%;
 }
 
+@media screen and (min-width: 769px) {
+  .intro .small-title {
+    font-size: 18px;
+    line-height: 27px;
+    padding-left: 120px;
+  }
+  .intro .titles {
+    font-size: 48px;
+    line-height: 72px;
+    padding-left: 120px;
+  }
+  .intro-slider {
+    height: 354px;
+  }
+  .intro-slider .slide {
+    height: 100%;
+  }
+  .intro .copy {
+    padding-left: 120px;
+    padding-right: 41%;
+  }
+  .intro .copy .titles {
+    padding-left: 0;
+  }
+  .intro .copy p {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .intro .copy-form {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 .services {
   padding-bottom: 72px;
 }
@@ -292,6 +375,38 @@ a.btn-subline:hover::before {
   color: #FFFFFF;
 }
 
+@media screen and (min-width: 640px) {
+  .services .container > .titles {
+    font-size: 36px;
+    line-height: 54px;
+  }
+  .services-box {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 341px));
+    place-content: center;
+  }
+  .services-box .service {
+    max-width: 341px;
+    transition: all 0.3s ease-in-out;
+  }
+  .services-box .service:nth-child(even) {
+    box-shadow: none;
+  }
+  .services-box .service:nth-child(even) .btn {
+    color: #828282;
+    background-color: #E0E0E0;
+  }
+  .services-box .service:hover {
+    box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+  }
+  .services-box .service .btn {
+    transition: all 0.3s ease-in-out;
+  }
+  .services-box .service .btn:hover {
+    color: #FFFFFF;
+    background-color: #2D9CDB;
+  }
+}
 .projects {
   padding-bottom: 72px;
 }
@@ -336,6 +451,29 @@ a.btn-subline:hover::before {
   background-repeat: no-repeat;
 }
 
+@media screen and (min-width: 769px) {
+  .projects .titles {
+    font-size: 36px;
+    line-height: 54px;
+  }
+  .projects-grid {
+    row-gap: 0;
+    padding-top: 40px;
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+  .projects-grid .project {
+    width: 545px;
+  }
+  .projects-grid .project:nth-child(2n+1) {
+    position: relative;
+    margin-top: 110px;
+  }
+  .projects-grid .project:nth-child(2n) {
+    position: relative;
+    margin-top: -20px;
+  }
+}
 .team-players .small-title, .team-players .titles {
   padding-left: 0;
 }
