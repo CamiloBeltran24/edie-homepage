@@ -88,6 +88,57 @@ a.btn-subline:hover::before {
     line-height: 27px;
   }
 }
+.animate {
+  transition: all 0.6s ease-in-out;
+  opacity: 0;
+}
+.animate.fade.active {
+  opacity: 1;
+}
+.animate.left {
+  transform: translateX(-100px);
+  transform-origin: left;
+}
+.animate.left.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+.animate.right {
+  transform: translateX(100px);
+  transform-origin: right;
+}
+.animate.right.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+.animate.top {
+  transform: translateY(-100px);
+  transform-origin: top;
+}
+.animate.top.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.animate.bottom {
+  transform: translateY(100px);
+  transform-origin: bottom;
+}
+.animate.bottom.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.animate.zoom-out {
+  opacity: 1;
+  overflow: hidden;
+}
+.animate.zoom-out img {
+  transform: scale(1.2);
+  transition: all 1.3s ease-in-out;
+}
+.animate.zoom-out.active img {
+  transform: scale(1);
+}
+
 .header {
   position: fixed;
   width: 100vw;
@@ -451,7 +502,7 @@ a.btn-subline:hover::before {
   background-repeat: no-repeat;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 767px) {
   .projects .titles {
     font-size: 36px;
     line-height: 54px;
@@ -465,6 +516,9 @@ a.btn-subline:hover::before {
   .projects-grid .project {
     width: 545px;
   }
+  .projects-grid .project-name {
+    font-size: 24px;
+  }
   .projects-grid .project:nth-child(2n+1) {
     position: relative;
     margin-top: 110px;
@@ -472,6 +526,11 @@ a.btn-subline:hover::before {
   .projects-grid .project:nth-child(2n) {
     position: relative;
     margin-top: -20px;
+  }
+  .projects .btn.btn-arrow {
+    margin: 0;
+    position: relative;
+    left: calc(100% - 150px);
   }
 }
 .team-players .small-title, .team-players .titles {
