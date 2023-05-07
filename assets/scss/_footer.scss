@@ -155,4 +155,21 @@
       }
     }
   }
+
+  @media screen and (min-width: 768px) {
+    padding-left: 130px;
+    padding-right: 130px;
+    .container {
+      .row {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        div {
+          width: 33.3%;
+          margin: 0;
+        }
+      }
+    }
+  }
 }

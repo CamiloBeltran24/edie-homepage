@@ -37,6 +37,7 @@
         width: 50%;
 
         figure {
+          border-radius: 24px;
           img {
             border-radius: 24px;
             overflow: hidden;
@@ -64,6 +65,56 @@
             max-width: 163px;
             max-height: 167px;
   
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 767px) {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+
+  }
+
+  @media screen and (min-width: 1024px) {
+
+    &__images {
+      width: 50%;
+
+    }
+    .box {
+      .left, .right {
+        width: unset;
+      }
+      .left {
+        
+        figure {
+          width: 320px;
+          height: 320px;
+          max-width: 320px;
+          max-height: 320px;
+        }
+      }
+
+      .right {
+        figure {
+          &:nth-child(1) {
+            width: 260px;
+            height: 260px;
+            max-width: 260px;
+            max-height: 260px;
+          }
+
+          &:nth-child(2) {
+            width: 292px;
+            height: 300;
+            max-width: 292px;
+            max-height: 300px;
           }
         }
       }

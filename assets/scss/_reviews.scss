@@ -37,4 +37,27 @@
       color: $btn-gray-text
     }
   }
+
+  @media screen and ( min-width: 767px ) {
+
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 130px;
+    padding-right: 130px;
+
+    .container {
+      width: 100%;
+    }
+
+    blockquote {
+      max-width: 900px;
+
+      p {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 54px;
+      }
+    }
+
+  }
 }
